@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			div{
+				float:right;
+				margin:1px 1px 0 0;
+				padding:10px;
+				width:calc((100% / 16) - 21px);
+
+			}
+		</style>
+	</head>
+	<body style="margin:0">
+
+
+		<script type="text/javascript">
+			for (var a = 0 ; a < 16; a++) {
+				for (var b = 0 ; b < 16; b++) {
+					for (var c = 0 ; c < 16; c++) {
+						var hex = "#"+ a.toString(16) + b.toString(16) + c.toString(16);
+						var div="<div style='background:"+hex+"'>"+hex+"</div>";
+						document.write(div);
+					}
+				}
+			}
+
+		</script>
+	</body>
+</html>
